@@ -3,7 +3,9 @@ var app       = express();
 var http      = require('http');
 var request   = require('request');
 var cheerio = require('cheerio');
+var corser = require("corser");
 
+app.use(corser.create());
 
 app.get('/consulta/:param', function(req, res){
   var parametro = req.params.param;

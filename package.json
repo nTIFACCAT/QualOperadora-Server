@@ -11,10 +11,11 @@
     "type": "git",
     "url": "git://github.com/murilomothsin/WhatsNumber.git"
   },
-  "dependencies" : {
+  "dependencies": {
     "express": "*",
     "request": "*",
-    "cheerio": "*"
+    "cheerio": "*",
+    "corser": "~2.0.0"
   },
   "author": "Murilo Mothsin",
   "license": "MIT",
