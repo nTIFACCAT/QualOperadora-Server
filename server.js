@@ -5,7 +5,7 @@ var request   = require('request');
 var cheerio = require('cheerio');
 
 
-app.get('/numero/:param', function(req, res){
+app.get('/consulta/:param', function(req, res){
   var parametro = req.params.param;
   
   var url = 'http://www.qualoperadora.net/';
