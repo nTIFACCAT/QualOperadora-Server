@@ -47,5 +47,5 @@ app.get('/consulta/:param', function(req, res){
 
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 console.log('starting server at localhost:3000');
