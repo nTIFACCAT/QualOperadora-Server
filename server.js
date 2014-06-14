@@ -65,6 +65,7 @@ function find(req) {
         var $ = cheerio.load(body);
         var result = $('#resultado > span')
         var data = {
+          telefoneOriginal: number,
           telefone: result.eq(0).html(),
           operadora: result.eq(1).html(),
           portabilidade: result.eq(2).text().trim().toLowerCase() == 'sim',
